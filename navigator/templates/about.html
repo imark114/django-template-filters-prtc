@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <h3><a href="/">Home</a></h3>
+    <h3><a href="/navigator/about/">About</a></h3>
+    <h3><a href="/navigator/blog/">Blog</a></h3>
+    <h1>List of students who have passed the exam</h1>
+    {% for student in students %}
+        {% if student.result %}
+        <ul>
+            <li><strong>Name:</strong> {{student.name}} </li>
+            <li><strong>Age:</strong> {{student.age}} </li>
+        </ul>
+        <hr>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

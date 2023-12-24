@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h3><a href="/">Home</a></h3>
+    <h3><a href="/navigator/about/">About</a></h3>
+    <h3><a href="/navigator/blog/">Blog</a></h3>
+    <h1>Popular Built-in Django Template Filters</h1>
+    <h2> {{dep | join:"-"}} </h2>
+    <h2>Employee Join On: {{joinDate | date:"D d M Y"}} </h2>
+    <h2>Adding VAlues: 5+5 = {{5 | add:"5"}} </h2>
+    <h2>Employee Name: {{name | capfirst}} </h2>
+    <h2>Cut Filter:: {{"Python is Fun" | cut:" "}} </h2>
+    <h2>First Item of a List:: {{list | first}}</h2>
+    <h2>Last Item of a List:: {{list | last}}</h2>
+    <h2>Length of the List {{list | length}} </h2>
+    <h2>{{"Happy Coding" | upper}}</h2>
+    <h2>{{fvrt| title}}</h2>
+    <h2>{{list | random}}</h2>
+    {% comment %} <h2>{{list | slice: "1"}}</h2> {% endcomment %}
+    <h2>I Love Django there is the number of word is: {{fvrt | wordcount}} </h2>
+</body>
+</html>
